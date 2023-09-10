@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morphen.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="brand">Morphen .</a>
+      <!-- <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="./">Home</a>
+          <a href="./">About</a>
+          <a href="./">Explore</a>
+          <a href="./">Gallery</a>
+          <a href="./">Contact</a>
+        </div>
+      </div> -->
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="data/8.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="data/6.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="data/7.mp4" autoplay muted loop></video>
+      <!-- <video class="video-slide" src="data/4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="data/5.mp4" autoplay muted loop></video> -->
+
+      <div class="content active">
+        <h1>Image.<br><span></span></h1>
+        <p>We utilize the benefits of matrices, computing advances and image processing techiques to improve security and privacy. An image is represented as a matrix with elements made up of arrays of RGB values. For this algorithm to work the image must be invertible <i>i.e a square matrix with non-zero determinant</i> and is of same dimensions. Feel free to test with any 2 images that falls under this criteria.</p>
+        <!-- <a href="./meta.html" target="_blank">Try it here</i></a> -->
+      </div>
+      <div class="content">
+        <h1>Metamorphosis.<br><span></span></h1>
+        <p>Suit yourself. What's new from other encryption techniques? You can choose the cipher image which generally is noise. So both the images make sense and we have hidden and confused the eavesdropper. And yes you can send your Netflix password as your cat Sabrina's photo and I wouldn't notice it. How cool is that? But is that all we can do? No mate, military, forensics, criminal justice, remote sensing, journalism, entertainment, advertising, finance, enterprises, IoT, phew my wrists hurt typing.</p>
+        <!-- <a href="https://github.com/SankalpKarthi3"  target="_blank"><i class="fab fa-github"></i> View Project</a> -->
+      </div>
+      <div class="content">
+        <h1>Encryption.<br><span></span></h1>
+        <p>But how does this work? Let's role-play now, I'm Morphen your sweet little algorithm. You send a photo of Sabrina and your Netflix password to me and I get a few matrices from it and give the images to you, now you share Sabrina's selfie with your pops but I don't know him. I go to a mall <i><b>(Public Domain)</b></i> and get you both a shared matrix. Now your pops is my <i><b>(Morphen)</b></i> friend and I go to the mall and give him the initial matrices after some hammering with the shared matrix, during this Shankaran Pillai <i><b>(Eavesdropper)</b></i> wanted your Netflix Password but all he had was Sabrina's selfie and he threw me down the escalator and took the matrices from me, and yeah I gave it to pops. Now pops gets the Netflix password from those magic matrices using the shared key and with my help. And it's done. Tell him that the soup was a bit salty that day wil ya? And btw, Shankaran Pillai's kids told me that he's been searching for your password for the past decade and now has Alzheimer's. </p>
+        <!-- <a href="https://medium.com/@sankalpkarthi3" target="_blank"><i class="fab fa-medium"></i> Read my Life</a> -->
+        <a href="./meta.html" target="_blank" style="display: inline-block">Try it here</i></a>
+        <a class="gittest" href="https://github.com/SankalpKarthi3/ImageMetamorphosisEncryption" target="_blank" style="display: inline-block"><i class="fab fa-github"></i></a>
+
+        <!-- <a href="./meta.html" target="_blank">Try it here</i></a>
+        <a class="gittest" href="https://github.com/SankalpKarthi3/ImageMetamorphosisEncryption" target="_blank"><i class="fab fa-github"></i></a> -->
+      </div>
+      <div class="media-icons">
+        <a href="https://www.linkedin.com/in/sankalpkarthi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/sankalpkarthi/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/SankalpKarthi" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://sankalpkarthi3.github.io/" target="_blank"><i class="fab fa-empire"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <!-- <div class="nav-btn"></div>
+        <div class="nav-btn"></div> -->
+      </div>
+    </section>
+    <script type="text/javascript">
+      //Javascript of Navigation Menu
+      // const menuBtn = document.querySelector(".menu-btn");
+      const navigation= document.querySelector(".navigation");
+
+      // menuBtn.addEventListener("click", () => {
+      //   menuBtn.classList.toggle("active");
+      //   navigation.classList.toggle("active");
+
+      // });
+      
+      //Javascript for video slider navigation
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
+
+      var sliderNav = function(manual){
+        btns.forEach((btn) => {
+          btn.classList.remove("active")
+        });
+
+        slides.forEach((slide) => {
+          slide.classList.remove("active")
+        });
+        
+        contents.forEach((content) => {
+          content.classList.remove("active")
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+      }
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+
+    </script>
+    <!-- <main></main>
+    <footer></footer> -->
+  </body>
+</html>

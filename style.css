@@ -217,10 +217,10 @@ section{
     }
 
     .home .content h1{
-        font-size: 3em;
-        font-weight: 675;
+        font-size: 2em;
+        font-weight: 475;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 1.2px;
         line-height: 45px;
         margin-bottom: 24px;
     }
